@@ -2,7 +2,7 @@ $mobile: 37.4375rem;
 $tablet-portrait-up: 37.5rem;
 $tablet-landscape-up: 56.25rem;
 $desktop-up: 75rem;
-$big-desktop-up: 112.4rem;
+$big-desktop-up: 120rem;
 
 @mixin for-phone-only {
   @media (max-width: $mobile) {
