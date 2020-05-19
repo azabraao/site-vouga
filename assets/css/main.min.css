@@ -86,11 +86,6 @@ body {
     width: 71.875rem;
     padding: 0; } }
 
-@media (min-width: 120rem) {
-  .container {
-    width: 112.5rem;
-    padding: 0; } }
-
 .navbar {
   padding: 20px 0;
   background: #4b3a30;
