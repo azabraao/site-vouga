@@ -258,6 +258,94 @@ body {
       overflow: visible;
       opacity: 1; } }
 
+.footer {
+  margin-top: 40px;
+  background: #4b3a30;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  padding: 40px 0;
+  line-height: 26px; }
+  .footer .footer__inside .footer__columns {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer .footer__inside .footer__columns .footer__column:not(:last-child) {
+      margin-bottom: 20px; }
+    .footer .footer__inside .footer__columns .footer__column {
+      width: 100%; }
+      .footer .footer__inside .footer__columns .footer__column a {
+        text-decoration: none;
+        color: #fff; }
+    .footer .footer__inside .footer__columns .footer__column.logo {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 40px; }
+      .footer .footer__inside .footer__columns .footer__column.logo img {
+        width: 150px; }
+    .footer .footer__inside .footer__columns .footer__column.contact {
+      width: auto;
+      padding-right: 40px; }
+      .footer .footer__inside .footer__columns .footer__column.contact p i {
+        margin-right: 10px; }
+    .footer .footer__inside .footer__columns .footer__column.address {
+      display: flex;
+      width: auto; }
+      .footer .footer__inside .footer__columns .footer__column.address i {
+        margin-right: 10px; }
+    .footer .footer__inside .footer__columns .footer__column.social {
+      display: flex;
+      padding: 20px 0; }
+      .footer .footer__inside .footer__columns .footer__column.social a {
+        margin-right: 20px;
+        display: flex;
+        align-items: center; }
+        .footer .footer__inside .footer__columns .footer__column.social a i {
+          margin-right: 7px;
+          width: 20px;
+          height: 20px; }
+
+@media (min-width: 75rem) {
+  .footer {
+    background-image: url(../img/linhas-2.png);
+    background-repeat: no-repeat;
+    padding: 200px 0 40px 0; }
+    .footer .footer__inside .footer__columns {
+      align-items: flex-start;
+      justify-content: space-between; }
+      .footer .footer__inside .footer__columns .footer__column:not(:last-child) {
+        margin-bottom: 0; }
+      .footer .footer__inside .footer__columns .footer__column {
+        width: auto;
+        margin-right: 40px; }
+        .footer .footer__inside .footer__columns .footer__column a {
+          text-decoration: none;
+          color: #fff; }
+      .footer .footer__inside .footer__columns .footer__column.logo {
+        margin-bottom: 0; }
+        .footer .footer__inside .footer__columns .footer__column.logo img {
+          width: 200px; }
+      .footer .footer__inside .footer__columns .footer__column.contact {
+        padding-right: 0; }
+        .footer .footer__inside .footer__columns .footer__column.contact p i {
+          margin-right: 10px; }
+      .footer .footer__inside .footer__columns .footer__column.address {
+        display: flex;
+        width: auto; }
+        .footer .footer__inside .footer__columns .footer__column.address i {
+          margin-right: 10px; }
+      .footer .footer__inside .footer__columns .footer__column.social {
+        padding: 0;
+        margin-right: 0; }
+        .footer .footer__inside .footer__columns .footer__column.social a:last-child {
+          margin-right: 0; }
+        .footer .footer__inside .footer__columns .footer__column.social a {
+          display: flex;
+          align-items: center; }
+          .footer .footer__inside .footer__columns .footer__column.social a i {
+            margin-right: 7px;
+            width: 20px;
+            height: 20px; } }
+
 .bg-primary {
   background-color: #4b3a30; }
 
@@ -437,3 +525,29 @@ body {
 
 .text-right {
   text-align: right; }
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.icon-email {
+  background-image: url(../img/icone-email.png); }
+
+.icon-whatsapp {
+  background-image: url(../img/icone-whatsapp.png); }
+
+.icon-phone {
+  background-image: url(../img/icone-telefone.png); }
+
+.icon-location {
+  background-image: url(../img/icone-local.png); }
+
+.icon-instagram {
+  background-image: url(../img/icone-instagram.png); }
+
+.icon-facebook {
+  background-image: url(../img/icone-facebook.png); }
