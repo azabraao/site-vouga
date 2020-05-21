@@ -1,7 +1,8 @@
 .footer {
   margin-top: 40px;
-
-  background: $primary;
+  font-size: 14px;
+  font-weight: 300;
+  background: $primary-light;
   font-family: $font-primary;
   color: $white;
   font-weight: 400;
@@ -19,6 +20,7 @@
 
       .footer__column {
         width: 100%;
+        font-weight: 300;
 
         a {
           text-decoration: none;
@@ -40,6 +42,9 @@
         padding-right: 40px;
 
         p {
+          display: flex;
+          align-items: center;
+
           i {
             margin-right: 10px;
           }
@@ -52,6 +57,7 @@
       .footer__column.address {
         display: flex;
         width: auto;
+        line-height: 20px;
 
         i {
           margin-right: 10px;
@@ -85,10 +91,7 @@
 
 @include for-desktop-up {
   .footer {
-    background-image: url(../img/linhas-2.png);
-    background-repeat: no-repeat;
-
-    padding: 200px 0 40px 0;
+    padding: 142px 0 46px 0;
 
     .footer__inside {
       .footer__columns {
@@ -109,17 +112,37 @@
           }
         }
 
+        .footer__column.logo:after {
+          content: "";
+          position: absolute;
+          width: 810px;
+          height: 254px;
+          background-image: url(../img/linhas-2.png);
+          background-repeat: no-repeat;
+          top: -146px;
+          background-size: 640px;
+          left: -41px;
+        }
+
         .footer__column.logo {
           margin-bottom: 0;
+          position: relative;
+          left: 8px;
+          position: relative;
 
           img {
-            width: 200px;
+            width: 156px;
           }
         }
         .footer__column.contact {
           padding-right: 0;
+          padding-left: 0;
+          margin-top: -11px;
 
           p {
+            display: flex;
+            align-items: center;
+
             i {
               margin-right: 10px;
             }
@@ -132,6 +155,12 @@
         .footer__column.address {
           display: flex;
           width: auto;
+          position: relative;
+          top: -8px;
+          left: -6px;
+          font-size: 14px;
+          margin-left: -44px;
+          line-height: 18px;
 
           i {
             margin-right: 10px;
@@ -144,6 +173,11 @@
         .footer__column.social {
           padding: 0;
           margin-right: 0;
+          position: relative;
+          top: -14px;
+          left: -7px;
+          font-size: 16px;
+          margin-left: -46px;
 
           a:last-child {
             margin-right: 0;
@@ -154,8 +188,8 @@
 
             i {
               margin-right: 7px;
-              width: 20px;
-              height: 20px;
+              width: 30px;
+              height: 30px;
             }
             span {
             }
