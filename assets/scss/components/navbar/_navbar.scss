@@ -134,6 +134,8 @@
     height: 85px;
     display: flex;
     align-items: center;
+    position: absolute;
+    width: 100%;
 
     .navbar__inside {
       .navbar__logo {
