@@ -1,0 +1,54 @@
+.site-header {
+  background: $primary-light;
+  padding: 40px 0;
+
+  .site-header__inside {
+    display: flex;
+    justify-content: center;
+
+    .site-header__image {
+      width: 100%;
+      max-width: 452px;
+      height: 524px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url(../img/vasos-1.png);
+    }
+
+    @include for-phone-only {
+      .site-header__image {
+        height: 324px;
+      }
+    }
+
+    @include for-tablet-portrait-up {
+      .site-header__image {
+        height: 524px;
+      }
+    }
+  }
+}
+
+@include for-desktop-up {
+  .site-header {
+    padding: 0;
+    position: relative;
+    z-index: -1;
+
+    .site-header__inside {
+      display: flex;
+      justify-content: center;
+
+      .site-header__image {
+        background-image: url(../img/site-header.png);
+        max-width: 100%;
+        height: 840px;
+        width: 140%;
+        position: relative;
+        width: 100%;
+        right: -40px;
+      }
+    }
+  }
+}

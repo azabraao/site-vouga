@@ -79,7 +79,7 @@ body {
 
 @media (min-width: 37.5rem) {
   .container {
-    width: 42rem; } }
+    width: 36rem; } }
 
 @media (min-width: 75rem) {
   .container {
@@ -178,7 +178,9 @@ body {
     padding: 0;
     height: 85px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: absolute;
+    width: 100%; }
     .navbar .navbar__inside .navbar__logo {
       position: relative;
       top: 5px;
@@ -585,3 +587,41 @@ body {
 
 .icon-facebook {
   background-image: url(../img/icone-facebook.png); }
+
+.site-header {
+  background: #634e42;
+  padding: 40px 0; }
+  .site-header .site-header__inside {
+    display: flex;
+    justify-content: center; }
+    .site-header .site-header__inside .site-header__image {
+      width: 100%;
+      max-width: 452px;
+      height: 524px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url(../img/vasos-1.png); }
+    @media (max-width: 37.4375rem) {
+      .site-header .site-header__inside .site-header__image {
+        height: 324px; } }
+    @media (min-width: 37.5rem) {
+      .site-header .site-header__inside .site-header__image {
+        height: 524px; } }
+
+@media (min-width: 75rem) {
+  .site-header {
+    padding: 0;
+    position: relative;
+    z-index: -1; }
+    .site-header .site-header__inside {
+      display: flex;
+      justify-content: center; }
+      .site-header .site-header__inside .site-header__image {
+        background-image: url(../img/site-header.png);
+        max-width: 100%;
+        height: 840px;
+        width: 140%;
+        position: relative;
+        width: 100%;
+        right: -40px; } }
