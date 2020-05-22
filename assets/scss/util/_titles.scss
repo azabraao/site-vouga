@@ -1,0 +1,25 @@
+$titles: (
+  title-1: $title-1,
+  title-2: $title-2,
+  title-3: $title-3,
+  title-4: $title-4,
+  title-5: $title-5,
+  title-6: $title-6,
+  subtitle-1: $subtitle-1,
+  subtitle-2: $subtitle-2,
+  subtitle-3: $subtitle-3,
+  subtitle-4: $subtitle-4,
+  subtitle-5: $subtitle-5,
+  subtitle-6: $subtitle-6,
+  content-smaller: $content-smaller,
+  content-small: $content-small,
+  content-normal: $content-normal,
+  content-medium: $content-medium,
+  content-large: $content-large,
+);
+
+@each $title in $titles {
+  .#{nth($title,1)} {
+    font-size: nth($title, 2);
+  }
+}
