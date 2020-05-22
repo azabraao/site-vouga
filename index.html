@@ -1,79 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/main.min.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar__inside">
-          <div class="navbar__logo">
-            <a href="/">
-              <img src="./assets/img/logo.svg" alt="Logo Vouga" />
-            </a>
-          </div>
-          <div class="navbar__hambuguer jsHamburguer">
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-          </div>
-          <div class="menu jsMenu">
-            <div class="menu__items">
-              <div class="menu__item menu__item--home">
-                <a class="menu__item-link" href="/home">
-                  Home
-                </a>
-              </div>
-              <div class="menu__item menu__item--quem-somos">
-                <a class="menu__item-link" href="/quem-somos">
-                  Quem Somos
-                </a>
-              </div>
-              <div class="menu__item">
-                <div class="menu__item--dropdown jsMenuDropdown">
-                  <span class="menu__item-link">
-                    Produtos
-                  </span>
+  <div w3-include-html="./includes/head.html"></div>
 
-                  <div class="menu__item--dropdown-links">
-                    <a href="">
-                      Link
-                    </a>
-                    <a href="">
-                      Link
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <a class="menu__item-link" href="/ambientacao">
-                  Ambientação
-                </a>
-              </div>
-              <div class="menu__item">
-                <div class="menu__item--dropdown jsMenuDropdown">
-                  <span class="menu__item-link">
-                    Atendimento
-                  </span>
-                  <div class="menu__item--dropdown-links">
-                    <a href="">
-                      Contato
-                    </a>
-                    <a href="">
-                      Trabalhe conosco
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+  <body>
+    <div w3-include-html="./includes/navbar.html"></div>
 
     <header class="site-header">
       <div class="container">
@@ -205,72 +135,10 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inside">
-          <div class="footer__columns">
-            <div class="footer__column logo">
-              <img src="./assets/img/logo.svg" alt="Logo vouga" />
-            </div>
-            <div class="footer__column contact">
-              <p>
-                <i class="icon icon-email"></i>
-                <span>
-                  <a href="mailto:vendas@vougadecor.com.br">
-                    vendas@vougadecor.com.br
-                  </a>
-                </span>
-              </p>
-              <p>
-                <i class="icon icon-whatsapp"></i>
-                <span>
-                  <a href="tel:+5511973569049">
-                    +55 11 97356 9049
-                  </a>
-                </span>
-              </p>
-              <p>
-                <i class="icon icon-phone"></i>
-                <span>
-                  <a href="tel:+551145240509">
-                    +55 11 4524 0509
-                  </a>
-                </span>
-              </p>
-            </div>
-            <div class="footer__column address">
-              <i class="icon icon-location"></i>
-              <span>
-                <div>
-                  Rua Vicente Mecca, 199
-                </div>
-                <div>
-                  Jardim De Lucca - Itatiba - SP
-                </div>
-                <div>
-                  CEP: 13.255-240 - Brasil
-                </div>
-              </span>
-            </div>
-            <div class="footer__column social">
-              <a target="_blank" href="https://www.instagram.com/vougadecor">
-                <i class="icon icon-instagram"></i>
-                <span>@vougadecor</span>
-              </a>
-              <a target="_blank" href="https://www.facebook.com/vougadecor">
-                <i class="icon icon-facebook"></i>
-                <span>/vougadecor</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/main.js"></script>
+
+    <div w3-include-html="./includes/footer.html"></div>
+
+    <div w3-include-html="./includes/scripts.html"></div>
+    <script defer src="./assets/js/include-html.js"></script>
   </body>
 </html>
