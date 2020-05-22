@@ -459,7 +459,7 @@ body {
   background-color: ""; }
 
 .bg-grey-light {
-  background-color: ""; }
+  background-color: #ccc; }
 
 .bg-grey-dark {
   background-color: ""; }
@@ -534,7 +534,7 @@ body {
   color: ""; }
 
 .color-grey-light {
-  color: ""; }
+  color: #ccc; }
 
 .color-grey-dark {
   color: ""; }
@@ -769,3 +769,84 @@ body {
           justify-content: center;
           flex-direction: column;
           margin: 20px 10px; } }
+
+.ouse-mudar {
+  background: #ccc;
+  margin-top: 40px;
+  padding: 40px 0 20px; }
+  .ouse-mudar .ouse-mudar__inside .ouse-mudar__header {
+    font-family: "Josefin Sans", sans-serif;
+    color: #4b3a30;
+    padding-bottom: 20px; }
+    .ouse-mudar .ouse-mudar__inside .ouse-mudar__header h2 {
+      font-size: 2.5rem;
+      font-weight: 300; }
+    .ouse-mudar .ouse-mudar__inside .ouse-mudar__header p {
+      font-size: 1.25rem; }
+  .ouse-mudar .ouse-mudar__inside .ouse-mudar__body {
+    background-image: url(../img/mulher-entre-arvores.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 40px 0; }
+    .ouse-mudar .ouse-mudar__inside .ouse-mudar__body .ouse-mudar__list {
+      font-family: "Josefin Sans", sans-serif;
+      color: #fff; }
+      .ouse-mudar .ouse-mudar__inside .ouse-mudar__body .ouse-mudar__list .ouse-mudar__list-item:before {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: #fff;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      .ouse-mudar .ouse-mudar__inside .ouse-mudar__body .ouse-mudar__list .ouse-mudar__list-item {
+        position: relative;
+        font-size: 1.5rem;
+        padding: 10px 0;
+        padding-left: 20px; }
+
+@media (min-width: 37.5rem) {
+  .ouse-mudar .ouse-mudar__inside .ouse-mudar__body {
+    background-size: 200%; } }
+
+@media (min-width: 75rem) {
+  .ouse-mudar .ouse-mudar__inside .ouse-mudar__header {
+    width: 900px;
+    padding: 20px 0 40px 200px; }
+    .ouse-mudar .ouse-mudar__inside .ouse-mudar__header h2 {
+      font-size: 3rem;
+      margin-bottom: 20px; }
+    .ouse-mudar .ouse-mudar__inside .ouse-mudar__header p {
+      font-size: 2rem; }
+  .ouse-mudar .ouse-mudar__inside .ouse-mudar__body {
+    background-image: url(../img/mulher-entre-arvores.png);
+    background-size: 100%;
+    height: 214px;
+    display: flex;
+    align-items: center; }
+    .ouse-mudar .ouse-mudar__inside .ouse-mudar__body .ouse-mudar__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .ouse-mudar .ouse-mudar__inside .ouse-mudar__body .ouse-mudar__list .ouse-mudar__list-item:before {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: #fff;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      .ouse-mudar .ouse-mudar__inside .ouse-mudar__body .ouse-mudar__list .ouse-mudar__list-item {
+        position: relative;
+        font-size: 1.5rem;
+        padding: 10px 0;
+        padding-left: 20px;
+        width: 200px;
+        margin-right: 40px; } }

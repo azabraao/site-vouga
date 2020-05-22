@@ -1,0 +1,127 @@
+.ouse-mudar {
+  background: $grey-light;
+  margin-top: 40px;
+  padding: 40px 0 20px;
+
+  .ouse-mudar__inside {
+    .ouse-mudar__header {
+      font-family: $font-primary;
+      color: $primary;
+      padding-bottom: 20px;
+
+      h2 {
+        font-size: $title-2;
+        font-weight: 300;
+      }
+      p {
+        font-size: $content-medium;
+
+        strong {
+        }
+      }
+    }
+    .ouse-mudar__body {
+      background-image: url(../img/mulher-entre-arvores.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 40px 0;
+
+      .ouse-mudar__list {
+        font-family: $font-primary;
+        color: $white;
+
+        .ouse-mudar__list-item:before {
+          content: "";
+          width: 10px;
+          height: 2px;
+          background: $white;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+
+        .ouse-mudar__list-item {
+          position: relative;
+          font-size: $content-large;
+          padding: 10px 0;
+          padding-left: 20px;
+
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet-portrait-up {
+  .ouse-mudar {
+    .ouse-mudar__inside {
+      .ouse-mudar__body {
+        background-size: 200%;
+      }
+    }
+  }
+}
+
+@include for-desktop-up {
+  .ouse-mudar {
+    .ouse-mudar__inside {
+      .ouse-mudar__header {
+        width: 900px;
+        padding: 20px 0 40px 200px;
+
+        h2 {
+          font-size: $title-1;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: $title-3;
+
+          strong {
+          }
+        }
+      }
+
+      .ouse-mudar__body {
+        background-image: url(../img/mulher-entre-arvores.png);
+        background-size: 100%;
+        height: 214px;
+        display: flex;
+        align-items: center;
+
+        .ouse-mudar__list {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .ouse-mudar__list-item:before {
+            content: "";
+            width: 10px;
+            height: 2px;
+            background: $white;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+
+          .ouse-mudar__list-item {
+            position: relative;
+            font-size: $content-large;
+            padding: 10px 0;
+            padding-left: 20px;
+            width: 200px;
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+  }
+}
