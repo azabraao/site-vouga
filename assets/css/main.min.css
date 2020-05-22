@@ -86,6 +86,22 @@ body {
     width: 71.875rem;
     padding: 0; } }
 
+.centered-columns {
+  display: flex;
+  flex-wrap: wrap; }
+  .centered-columns .column {
+    margin-bottom: 20px;
+    width: 100%; }
+
+@media (min-width: 75rem) {
+  .centered-columns {
+    width: 50%;
+    margin: 0 auto; }
+    .centered-columns .column {
+      margin-bottom: 0;
+      width: 50%;
+      padding: 0 20px; } }
+
 .navbar {
   padding: 20px 0;
   background: #4b3a30;
@@ -382,6 +398,21 @@ body {
             width: 30px;
             height: 30px; } }
 
+.content {
+  font-family: "Josefin Sans", sans-serif; }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .content p:not(:last-child) {
+    margin-bottom: 10px; }
+
 .bg-primary {
   background-color: #4b3a30; }
 
@@ -588,6 +619,57 @@ body {
 .icon-facebook {
   background-image: url(../img/icone-facebook.png); }
 
+.title-1 {
+  font-size: 3rem; }
+
+.title-2 {
+  font-size: 2.5rem; }
+
+.title-3 {
+  font-size: 2rem; }
+
+.title-4 {
+  font-size: 1.5rem; }
+
+.title-5 {
+  font-size: 1.25rem; }
+
+.title-6 {
+  font-size: 1rem; }
+
+.subtitle-1 {
+  font-size: 3rem; }
+
+.subtitle-2 {
+  font-size: 2.5rem; }
+
+.subtitle-3 {
+  font-size: 2rem; }
+
+.subtitle-4 {
+  font-size: 1.5rem; }
+
+.subtitle-5 {
+  font-size: 1.25rem; }
+
+.subtitle-6 {
+  font-size: 1rem; }
+
+.content-smaller {
+  font-size: 0.4375rem; }
+
+.content-small {
+  font-size: 0.75rem; }
+
+.content-normal {
+  font-size: 1rem; }
+
+.content-medium {
+  font-size: 1.25rem; }
+
+.content-large {
+  font-size: 1.5rem; }
+
 .site-header {
   background: #634e42;
   padding: 40px 0; }
@@ -625,3 +707,15 @@ body {
         position: relative;
         width: 100%;
         right: -40px; } }
+
+.vivifique {
+  background-image: url(../img/background-folha-2.png);
+  background-position: center;
+  background-repeat: repeat;
+  padding: 40px 0; }
+  .vivifique .vivifique__inside {
+    color: #fff; }
+
+.quem-somos {
+  color: #4b3a30;
+  padding: 20px 0; }

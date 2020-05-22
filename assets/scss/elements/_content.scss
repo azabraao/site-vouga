@@ -1,0 +1,19 @@
+.content {
+  font-family: $font-primary;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

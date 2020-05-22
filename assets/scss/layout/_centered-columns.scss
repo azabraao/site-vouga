@@ -1,0 +1,22 @@
+.centered-columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@include for-desktop-up {
+  .centered-columns {
+    width: 50%;
+    margin: 0 auto;
+
+    .column {
+      margin-bottom: 0;
+      width: 50%;
+      padding: 0 20px;
+    }
+  }
+}
