@@ -420,6 +420,8 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 15px; }
+  .content h1 .smaller {
+    font-size: 1.5rem; }
   .content p:not(:last-child) {
     margin-bottom: 10px; }
 
@@ -860,3 +862,45 @@ body {
         padding-left: 20px;
         width: 200px;
         margin-right: 40px; } }
+
+.product-detail {
+  padding: 40px 0 10px; }
+  .product-detail .product-detail__inside .product-detail__header {
+    padding-bottom: 30px; }
+    .product-detail .product-detail__inside .product-detail__header .content {
+      margin-bottom: 30px; }
+  .product-detail .product-detail__inside .product-detail__body .product-detail__row:not(:last-child) {
+    margin-bottom: 40px; }
+  .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-header h3 {
+    color: #4b3a30;
+    border-bottom: 1px solid #4b3a30; }
+
+@media (min-width: 75rem) {
+  .product-detail {
+    padding: 50px 0 10px; }
+    .product-detail .product-detail__inside {
+      padding-left: 300px; }
+      .product-detail .product-detail__inside .product-detail__header {
+        padding-bottom: 0;
+        display: flex;
+        justify-content: space-between; }
+        .product-detail .product-detail__inside .product-detail__header .product-detail__header-content {
+          width: 400px;
+          color: #4b3a30; }
+          .product-detail .product-detail__inside .product-detail__header .product-detail__header-content p {
+            line-height: 21px; }
+        .product-detail .product-detail__inside .product-detail__header .content {
+          margin-bottom: 0; }
+        .product-detail .product-detail__inside .product-detail__header .product-detail__header-image {
+          width: 300px;
+          padding-top: 20px; }
+      .product-detail .product-detail__inside .product-detail__body .product-detail__row:not(:last-child) {
+        margin-bottom: 40px; }
+      .product-detail .product-detail__inside .product-detail__body .product-detail__row:not(:last-child) {
+        margin-bottom: 80px; }
+      .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-header h3 {
+        font-weight: 500;
+        color: #4b3a30;
+        border-bottom: 1px solid #4b3a30; }
+      .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image {
+        padding-top: 20px; } }
