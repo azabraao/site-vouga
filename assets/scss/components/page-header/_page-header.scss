@@ -1,0 +1,18 @@
+.page-header {
+  .page-header__inside {
+  }
+}
+
+@include for-desktop-up {
+  .page-header {
+    padding-top: 85px;
+
+    .page-header__inside {
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
