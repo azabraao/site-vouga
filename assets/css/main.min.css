@@ -682,6 +682,10 @@ body {
 .content-large {
   font-size: 1.5rem; }
 
+@media (min-width: 75rem) {
+  .desktop-space-left {
+    padding-left: 300px; } }
+
 .site-header {
   background: #634e42;
   padding: 40px 0; }
@@ -904,3 +908,73 @@ body {
         border-bottom: 1px solid #4b3a30; }
       .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image {
         padding-top: 20px; } }
+
+.ambientacao {
+  padding-top: 30px; }
+  .ambientacao .ambientacao__header {
+    margin-bottom: 30px; }
+  .ambientacao .ambientacao__body .ambientacao_images {
+    display: flex;
+    flex-wrap: wrap; }
+    .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image {
+      width: 100%;
+      position: relative;
+      padding: 10px;
+      overflow: hidden;
+      height: 310px; }
+      .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image .ambientacao__image-the-image {
+        position: relative;
+        width: 100%;
+        height: 290px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image .ambientacao__image-the-image img:hover {
+          max-width: 110%;
+          min-width: 110%; }
+        .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image .ambientacao__image-the-image img {
+          transition: all 0.4s;
+          display: block;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          overflow: hidden; }
+      .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image .ambientacao__image-title {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        padding: 15px;
+        background: #4b3a30cf;
+        color: #fff; }
+        .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image .ambientacao__image-title p {
+          font-size: 0.75rem;
+          font-family: "Josefin Sans", sans-serif; }
+
+@media (min-width: 37.5rem) {
+  .ambientacao {
+    padding-top: 50px; }
+    .ambientacao .ambientacao__header {
+      margin-bottom: 40px; }
+      .ambientacao .ambientacao__header h1 {
+        margin-bottom: 10px; }
+      .ambientacao .ambientacao__header p {
+        max-width: 300px; } }
+
+@media (min-width: 75rem) {
+  .ambientacao {
+    padding-top: 50px; }
+    .ambientacao .ambientacao__header {
+      margin-bottom: 40px; }
+      .ambientacao .ambientacao__header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px; }
+    .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image {
+      width: 50%; } }
