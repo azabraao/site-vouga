@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  border: 1px solid $primary;
+  padding: 20px;
+  font-family: $font-secondary;
+  color: $primary;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.button--medium {
+  border: 1px solid $primary;
+  font-size: $content-medium;
+  padding: 16px 30px;
+}
+
+.button--primary {
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+.button--primary:hover {
+  color: $white;
+  background: $primary;
+}
