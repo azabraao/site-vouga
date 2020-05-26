@@ -1078,6 +1078,8 @@ body {
   padding: 50px 0; }
   .atendimento .atendimento__inside .atendimento__header {
     color: #4b3a30; }
+    .atendimento .atendimento__inside .atendimento__header h1 {
+      max-width: 300px; }
   .atendimento .atendimento__inside .atendimento__body .atendimento__columns {
     display: flex;
     justify-content: space-between; }
