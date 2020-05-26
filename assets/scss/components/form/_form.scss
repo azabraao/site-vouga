@@ -1,0 +1,17 @@
+.form {
+  .form__textarea::placeholder,
+  .form__input::placeholder {
+    color: $primary;
+  }
+  .form__textarea,
+  .form__input {
+    background: $grey-light;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-family: $font-primary;
+    color: $primary;
+  }
+}

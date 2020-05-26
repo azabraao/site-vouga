@@ -435,6 +435,21 @@ body {
       display: flex;
       justify-content: center; } }
 
+.form .form__textarea::placeholder,
+.form .form__input::placeholder {
+  color: #4b3a30; }
+
+.form .form__textarea,
+.form .form__input {
+  background: #eae7e0;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-family: "Josefin Sans", sans-serif;
+  color: #4b3a30; }
+
 .button {
   display: inline-block;
   border: 1px solid #4b3a30;
@@ -460,6 +475,16 @@ body {
 .button--primary:hover {
   color: #fff;
   background: #4b3a30; }
+
+.button--primary-reverse {
+  background: #4b3a30;
+  color: #fff; }
+
+.button--primary-reverse:hover {
+  opacity: 0.9; }
+
+.button--small {
+  padding: 10px 20px; }
 
 .content {
   font-family: "Josefin Sans", sans-serif; }
@@ -524,7 +549,7 @@ body {
   background-color: ""; }
 
 .bg-grey-light {
-  background-color: #ccc; }
+  background-color: #eae7e0; }
 
 .bg-grey-dark {
   background-color: ""; }
@@ -599,7 +624,7 @@ body {
   color: ""; }
 
 .color-grey-light {
-  color: #ccc; }
+  color: #eae7e0; }
 
 .color-grey-dark {
   color: ""; }
@@ -683,6 +708,18 @@ body {
 
 .icon-facebook {
   background-image: url(../img/icone-facebook.png); }
+
+.icon-email--brown {
+  background-image: url(../img/icone-email.svg); }
+
+.icon-whatsapp--brown {
+  background-image: url(../img/icone-whatsapp.svg); }
+
+.icon-phone--brown {
+  background-image: url(../img/icone-telefone.svg); }
+
+.icon-location--brown {
+  background-image: url(../img/icone-location.svg); }
 
 .title-1 {
   font-size: 3rem; }
@@ -840,7 +877,7 @@ body {
           margin: 20px 10px; } }
 
 .ouse-mudar {
-  background: #ccc;
+  background: #eae7e0;
   margin-top: 40px;
   padding: 40px 0 20px; }
   .ouse-mudar .ouse-mudar__inside .ouse-mudar__header {
@@ -1036,3 +1073,44 @@ body {
         margin-bottom: 10px; }
     .ambientacao .ambientacao__body .ambientacao_images .ambientacao__image {
       width: 50%; } }
+
+.atendimento {
+  padding: 50px 0; }
+  .atendimento .atendimento__inside .atendimento__header {
+    color: #4b3a30; }
+  .atendimento .atendimento__inside .atendimento__body .atendimento__columns {
+    display: flex;
+    justify-content: space-between; }
+    .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos {
+      width: 40%;
+      color: #4b3a30;
+      font-family: "Josefin Sans", sans-serif; }
+      .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos h2 {
+        color: #4b3a30;
+        margin-bottom: 20px; }
+      .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos .contact {
+        line-height: 26px;
+        margin-bottom: 20px; }
+        .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos .contact p {
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px; }
+          .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos .contact p i {
+            margin-right: 10px; }
+          .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos .contact p span a {
+            text-decoration: none;
+            color: #4b3a30; }
+      .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos .address {
+        display: flex;
+        width: auto;
+        line-height: 20px;
+        margin-bottom: 20px; }
+        .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__infos .address i {
+          margin-right: 10px; }
+    .atendimento .atendimento__inside .atendimento__body .atendimento__columns .atendimento__form {
+      width: 60%;
+      padding-right: 50px; }
+
+@media (min-width: 75rem) {
+  .atendimento {
+    padding: 70px 0 200px 0; } }
