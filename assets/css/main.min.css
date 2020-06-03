@@ -801,14 +801,15 @@ body {
   .site-header {
     padding: 0;
     position: relative;
-    z-index: -1; }
+    z-index: -1;
+    margin-bottom: 23px; }
     .site-header .site-header__inside {
       display: flex;
       justify-content: center; }
       .site-header .site-header__inside .site-header__image {
         background-image: url(../img/site-header.png);
         max-width: 100%;
-        height: 685px;
+        height: 686px;
         width: 140%;
         position: relative;
         width: 100%;
