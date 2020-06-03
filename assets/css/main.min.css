@@ -837,6 +837,25 @@ body {
   color: #4b3a30;
   padding: 20px 0; }
 
+@media (min-width: 75rem) {
+  .quem-somos {
+    height: 383px; }
+    .quem-somos .column.content:first-child {
+      padding: 15px 6px 0px 0px; }
+    .quem-somos .column.content .title-2 {
+      font-size: 43px;
+      line-height: 40px; }
+    .quem-somos .column.content p:not(:last-child) {
+      margin-bottom: 20px; }
+    .quem-somos .column.content p {
+      font-size: 14.2px;
+      padding-left: 3px;
+      line-height: 19px; }
+    .quem-somos .column.content img {
+      width: 277px;
+      margin-left: auto;
+      display: block; } }
+
 .diferenciais {
   background-image: url(../img/mao-planta.png);
   color: #fff;
