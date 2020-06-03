@@ -100,7 +100,7 @@ body {
     .centered-columns .column {
       margin-bottom: 0;
       width: 50%;
-      padding: 0 20px; } }
+      padding: 0 3px; } }
 
 .navbar {
   padding: 20px 0;
@@ -725,7 +725,7 @@ body {
   font-size: 3rem; }
 
 .title-2 {
-  font-size: 2.5rem; }
+  font-size: 2.75rem; }
 
 .title-3 {
   font-size: 2rem; }
@@ -772,6 +772,9 @@ body {
 .content-large {
   font-size: 1.5rem; }
 
+.title-2 {
+  line-height: 49px; }
+
 @media (min-width: 75rem) {
   .desktop-space-left {
     padding-left: 300px; } }
@@ -817,12 +820,18 @@ body {
         background-size: 91%; } }
 
 .vivifique {
-  background-image: url(../img/background-folha-2.png);
+  background-image: url(../img/background-folha-2.png), url(../img/folha-textura.png);
   background-position: center;
-  background-repeat: repeat;
-  padding: 40px 0; }
+  background-repeat: no-repeat, repeat;
+  padding: 53px 0 50px;
+  height: 338px;
+  background-size: contain, 104%; }
   .vivifique .vivifique__inside {
     color: #fff; }
+    .vivifique .vivifique__inside .content p {
+      font-size: 14px;
+      padding-left: 3px;
+      line-height: 18.4px; }
 
 .quem-somos {
   color: #4b3a30;
@@ -887,7 +896,7 @@ body {
     color: #4b3a30;
     padding-bottom: 20px; }
     .ouse-mudar .ouse-mudar__inside .ouse-mudar__header h2 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       font-weight: 300; }
     .ouse-mudar .ouse-mudar__inside .ouse-mudar__header p {
       font-size: 1.25rem; }
