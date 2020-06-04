@@ -31,14 +31,33 @@
 
 @include for-desktop-up {
   .diferenciais {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../img/mao.png), url(../img/blured-background.jpg);
+    color: $white;
+    overflow: hidden;
+    background-position: left, center;
+    background-size: contain, 100%;
+    background-repeat: no-repeat, no-repeat;
     padding: 50px 0;
+    height: 454px;
+
+    .diferenciais__inside:before {
+      content: "";
+      background-image: url(../img/2-linhas.png);
+      display: block;
+      width: 458px;
+      height: 500px;
+      position: absolute;
+      left: -540px;
+      top: -72px;
+      height: 487px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
 
     .diferenciais__inside {
+      position: relative;
       width: 50%;
-      padding-top: 20px;
+      padding-top: 12px;
       margin-left: auto;
 
       .diferenciais__header {
@@ -62,12 +81,15 @@
 
         .diferencial {
           position: relative;
-          width: 40%;
+          width: 47%;
           padding: 10px;
           display: flex;
           justify-content: center;
           flex-direction: column;
           margin: 20px 10px;
+          margin-top: 9px;
+          margin-left: 6px;
+          margin-bottom: 28px;
         }
       }
     }
