@@ -70,17 +70,22 @@
 
 @include for-desktop-up {
   .ouse-mudar {
+    margin-top: 24px;
+    padding: 21px 0 16px;
+
     .ouse-mudar__inside {
       .ouse-mudar__header {
         width: 900px;
-        padding: 20px 0 40px 200px;
+        padding: 20px 0 23px 285px;
 
         h2 {
-          font-size: $title-1;
           margin-bottom: 20px;
         }
         p {
-          font-size: $title-3;
+          font-size: 29.3px;
+          padding-left: 2px;
+          line-height: 37px;
+          margin-top: -4px;
 
           strong {
           }
@@ -90,7 +95,7 @@
       .ouse-mudar__body {
         background-image: url(../img/mulher-entre-arvores.png);
         background-size: 100%;
-        height: 214px;
+        height: 222px;
         display: flex;
         align-items: center;
 
@@ -113,12 +118,12 @@
           }
 
           .ouse-mudar__list-item {
-            position: relative;
             font-size: $content-large;
+            position: relative;
             padding: 10px 0;
             padding-left: 20px;
-            width: 200px;
-            margin-right: 40px;
+            width: 160px;
+            margin-right: 71px;
           }
         }
       }
