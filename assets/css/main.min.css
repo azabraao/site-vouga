@@ -821,18 +821,27 @@ body {
         background-size: 91%; } }
 
 .vivifique {
-  background-image: url(../img/background-folha-2.png), url(../img/folha-textura.png);
+  background-image: url(../img/background-folha-2.png);
   background-position: center;
-  background-repeat: no-repeat, repeat;
-  padding: 53px 0 50px;
-  height: 338px;
-  background-size: contain, 104%; }
+  background-repeat: repeat;
+  padding: 40px 0; }
   .vivifique .vivifique__inside {
     color: #fff; }
-    .vivifique .vivifique__inside .content p {
-      font-size: 14px;
-      padding-left: 3px;
-      line-height: 18.4px; }
+
+@media (min-width: 75rem) {
+  .vivifique {
+    background-image: url(../img/background-folha-2.png), url(../img/folha-textura.png);
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    padding: 53px 0 50px;
+    height: 338px;
+    background-size: contain, 104%; }
+    .vivifique .vivifique__inside {
+      color: #fff; }
+      .vivifique .vivifique__inside .content p {
+        font-size: 14px;
+        padding-left: 3px;
+        line-height: 18.4px; } }
 
 .quem-somos {
   color: #4b3a30;
