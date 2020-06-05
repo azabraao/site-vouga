@@ -330,6 +330,7 @@ body {
 
 @media (min-width: 75rem) {
   .footer {
+    margin-top: 19px;
     padding: 142px 0 46px 0; }
     .footer .footer__inside .footer__columns {
       align-items: flex-start;
