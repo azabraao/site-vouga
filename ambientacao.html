@@ -94,7 +94,10 @@
                   alt="Vouga decor imagem de ambientação"
                 />
               </div>
-              <div class="ambientacao__image-title">
+              <div
+                data-src="./assets/img/ambientacao-item.png"
+                class="ambientacao__image-title jsActiveModal"
+              >
                 <p>
                   Nome do produto
                 </p>
@@ -107,7 +110,10 @@
                   alt="Vouga decor imagem de ambientação"
                 />
               </div>
-              <div class="ambientacao__image-title">
+              <div
+                data-src="http://placekitten.com/200/100"
+                class="ambientacao__image-title jsActiveModal"
+              >
                 <p>
                   Nome do produto
                 </p>
@@ -120,7 +126,10 @@
                   alt="Vouga decor imagem de ambientação"
                 />
               </div>
-              <div class="ambientacao__image-title">
+              <div
+                data-src="http://placekitten.com/200/600"
+                class="ambientacao__image-title jsActiveModal"
+              >
                 <p>
                   Nome do produto
                 </p>
@@ -133,7 +142,10 @@
                   alt="Vouga decor imagem de ambientação"
                 />
               </div>
-              <div class="ambientacao__image-title">
+              <div
+                data-src="./assets/img/ambientacao-item.png"
+                class="ambientacao__image-title jsActiveModal"
+              >
                 <p>
                   Nome do produto
                 </p>
@@ -160,11 +172,27 @@
         </div>
       </div>
     </div>
-
+    <div class="modal-overlay jsModalOverlay jsCloseModal">
+      <div class="modal">
+        <div class="modal__body">
+          <picture>
+            <button type="button" class="modal__close jsCloseModal">x</button>
+            <img
+              src="./assets/img/ambientacao-item.png"
+              class="jsModalImagem"
+              alt="Imagem ampliada"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
     <div w3-include-html="./includes/footer.html"></div>
-
-    <div w3-include-html="./includes/scripts.html"></div>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
     <script defer src="./assets/js/include-html.js"></script>
   </body>
 </html>
