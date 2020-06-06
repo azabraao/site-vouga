@@ -1,0 +1,79 @@
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-overlay {
+  display: none;
+  background: #cccccc;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+
+  .modal {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal__body {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      picture {
+        position: relative;
+        height: 100%;
+
+        .modal__close {
+          cursor: pointer;
+          position: absolute;
+          font-family: $font-primary;
+          background: $black;
+          color: $white;
+          padding: 20px;
+          top: 0;
+          right: 0;
+          width: 40px;
+          height: 40px;
+          border: none;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet-portrait-up {
+  .modal-overlay {
+    .modal {
+      .modal__body {
+        picture {
+          img {
+            // max-height: 80vh;
+            // max-width: 100%;
+            // display: block;
+            // height: -webkit-fill-available;
+          }
+        }
+      }
+    }
+  }
+}

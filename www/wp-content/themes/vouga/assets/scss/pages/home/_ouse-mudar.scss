@@ -70,17 +70,49 @@
 
 @include for-desktop-up {
   .ouse-mudar {
+    position: relative;
+    margin-top: 24px;
+    padding: 21px 0 16px;
+
     .ouse-mudar__inside {
+      .ouse-mudar__header:before {
+        content: "";
+        background-image: url(../img/linha-1.png);
+        display: block;
+        width: 229px;
+        height: 430px;
+        position: absolute;
+        right: -175px;
+        top: -21px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+      .ouse-mudar__header:after {
+        content: "";
+        background-image: url(../img/linha-2.png);
+        width: 310px;
+        height: 400px;
+        position: absolute;
+        right: -286px;
+        top: 39px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 0;
+      }
       .ouse-mudar__header {
+        position: relative;
         width: 900px;
-        padding: 20px 0 40px 200px;
+        padding: 20px 0 23px 285px;
 
         h2 {
-          font-size: $title-1;
           margin-bottom: 20px;
         }
         p {
-          font-size: $title-3;
+          font-size: 29.3px;
+          padding-left: 2px;
+          line-height: 37px;
+          margin-top: -4px;
 
           strong {
           }
@@ -90,9 +122,10 @@
       .ouse-mudar__body {
         background-image: url(../img/mulher-entre-arvores.png);
         background-size: 100%;
-        height: 214px;
+        height: 222px;
         display: flex;
         align-items: center;
+        position: relative;
 
         .ouse-mudar__list {
           display: flex;
@@ -113,12 +146,12 @@
           }
 
           .ouse-mudar__list-item {
-            position: relative;
             font-size: $content-large;
+            position: relative;
             padding: 10px 0;
             padding-left: 20px;
-            width: 200px;
-            margin-right: 40px;
+            width: 160px;
+            margin-right: 71px;
           }
         }
       }

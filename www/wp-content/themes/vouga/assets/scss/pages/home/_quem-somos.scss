@@ -5,3 +5,36 @@
   .quem-somos__inside {
   }
 }
+
+@include for-desktop-up {
+  .quem-somos {
+    height: 383px;
+
+    .column.content:first-child {
+      padding: 15px 6px 0px 0px;
+    }
+
+    .column.content {
+      .title-2 {
+        font-size: 43px;
+        line-height: 40px;
+      }
+
+      p:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 14.2px;
+        padding-left: 3px;
+        line-height: 19px;
+      }
+
+      img {
+        width: 277px;
+        margin-left: auto;
+        display: block;
+      }
+    }
+  }
+}

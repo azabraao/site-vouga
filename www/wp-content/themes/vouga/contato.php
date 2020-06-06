@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/* Template Name: Contato
+
+*/
+get_header(); ?>
 
     <header class="page-header">
       <div class="page-header__inside">

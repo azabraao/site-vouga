@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="menu__item">
-            <a class="menu__item-link" href="/ambientacao">
+            <a class="menu__item-link" href="ambientacao">
               Ambientação
             </a>
           </div>

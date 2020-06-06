@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/* 
+Template Name: trabalhe-conosco
+*/
+ get_header(); ?>
     <header class="page-header">
       <div class="page-header__inside">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/trabalhe-conosco-background.png" />
