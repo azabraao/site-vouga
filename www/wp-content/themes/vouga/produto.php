@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Produto
+*/
+get_header(); ?>
     <header class="page-header">
       <div class="page-header__inside">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/produtos-header.png" />
@@ -31,7 +35,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-cores.png" alt="Cores" />
             </div>
           </header>
+
           <div class="product-detail__body">
+
             <section class="product-detail__row">
               <header class="product-detail__row-header content">
                 <h3 class="title-4">
@@ -42,6 +48,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-inclinato.png" alt="" />
               </div>
             </section>
+
             <section class="product-detail__row">
               <header class="product-detail__row-header content">
                 <h3 class="title-4">
@@ -52,6 +59,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-floreira-estreita.png" alt="" />
               </div>
             </section>
+
             <section class="product-detail__row">
               <header class="product-detail__row-header content">
                 <h3 class="title-4">
@@ -62,7 +70,9 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-oval.png" alt="" />
               </div>
             </section>
+
           </div>
+          
         </div>
       </div>
     </div>

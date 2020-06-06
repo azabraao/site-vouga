@@ -13,7 +13,8 @@
       </div>
       <div class="menu jsMenu">
         <div class="menu__items">
-          <div class="menu__item menu__item--home">
+
+          <!-- <div class="menu__item menu__item--home">
             <a class="menu__item-link" href="/home">
               Home
             </a>
@@ -39,11 +40,13 @@
               </div>
             </div>
           </div>
+
           <div class="menu__item">
             <a class="menu__item-link" href="ambientacao">
               Ambientação
             </a>
           </div>
+
           <div class="menu__item">
             <div class="menu__item--dropdown jsMenuDropdown">
               <span class="menu__item-link">
@@ -58,7 +61,8 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </div>
       </div>
     </div>
