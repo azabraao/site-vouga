@@ -2,14 +2,9 @@
 /* Template Name: Contato
 
 */
-get_header(); ?>
-
-    <header class="page-header">
-      <div class="page-header__inside">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contato-background.png" />
-      </div>
-    </header>
-
+get_header(); 
+  include('template-parts/page-banner.php');
+?>
     <section class="atendimento">
       <div class="container">
         <div class="atendimento__inside desktop-space-left">

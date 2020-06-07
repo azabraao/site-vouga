@@ -1,8 +1,6 @@
 
 <?php get_header(); ?>
 
-  <?php include('template-parts/navbar.php') ?>
-
   <header class="site-header">
     <div class="container">
       <div class="site-header__inside">

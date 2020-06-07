@@ -2,21 +2,13 @@
 /* 
 Template Name: Ambientacao
 */
-get_header(); ?>
-
-<header class="page-header">
-    <div class="page-header__inside">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-ambientacao.png" />
-    </div>
-</header>
-
+get_header(); 
+    include('template-parts/page-banner.php'); 
+?>
 <section class="ambientacao">
     <div class="container">
         <header class="ambientacao__header content desktop-space-left">
             <h1 class="title-3"><?php the_title(); ?></h1>
-            <!-- <p>
-                Exemplos de decoração com nossos produtos, enviadas por clientes e profissionais. Clique no nome da linha para ampliar.
-            </p> -->
             <?php if ( have_posts() ) :
                     while ( have_posts() ) : the_post();
                         the_content();
@@ -79,8 +71,7 @@ get_header(); ?>
                 </h2>
             </div>
             <div class="cta__body">
-                <a href="/contato" class="button button--medium button--primary">Entre em contato</a
-            >
+                <a href="/contato" class="button button--medium button--primary">Entre em contato</a>
           </div>
         </div>
       </div>

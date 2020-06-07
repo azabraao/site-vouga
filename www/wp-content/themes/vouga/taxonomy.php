@@ -19,36 +19,49 @@ get_header(); ?>
                   Linha
                 </div>
                 <div>
-                  Jateado
+                  <?php 
+                  $term = get_the_terms( $post->ID, 'linha');
+                  $term = $term[0];
+                   echo $term->name;?>
                 </div>
               </h1>
-
-              <h2 class="title-5">Polietileno</h2>
+              <?php 
+              // print_r($post); ?>
+              <h2 class="title-5">
+                <?php $material = get_field('material', $term);
+                echo $material; ?>
+              </h2>
               <p>
-                O design da linha Jateado vem para proporcionar à sua casa e ao
-                seu ambiente de trabalho mais harmonia na decoração além de
-                sofisticação e beleza.
+                <?php echo term_description();?>
               </p>
             </div>
             <div class="product-detail__header-image content">
               <h3 class="title-5">Cores</h3>
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-cores.png" alt="Cores" />
+              <?php $cores = get_field('cores', $term);
+              ?>
+              <img src="<?php echo $cores; ?>" alt="Cores" />
             </div>
           </header>
 
           <div class="product-detail__body">
-
+          <?php if ( have_posts() ) :
+                    while ( have_posts() ) : the_post();
+                        the_content();
+                    ?>
             <section class="product-detail__row">
               <header class="product-detail__row-header content">
                 <h3 class="title-4">
-                  Inclinato
+                  <?php the_title(); ?>
                 </h3>
               </header>
               <div class="product-detail__row-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-inclinato.png" alt="" />
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-inclinato.png" alt="" /> -->
+                <?php echo get_the_post_thumbnail(); ?>
               </div>
             </section>
-
+         <?php endwhile; 
+        endif;?>
+<!-- 
             <section class="product-detail__row">
               <header class="product-detail__row-header content">
                 <h3 class="title-4">
@@ -69,7 +82,7 @@ get_header(); ?>
               <div class="product-detail__row-image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-oval.png" alt="" />
               </div>
-            </section>
+            </section> -->
 
           </div>
           
