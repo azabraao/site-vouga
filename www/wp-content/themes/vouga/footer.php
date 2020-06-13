@@ -1,3 +1,6 @@
+<?php 
+    include('template-parts/contato/contato-data.php');
+?>
 <footer class="footer">
   <div class="container">
     <div class="footer__inside">
@@ -9,24 +12,24 @@
           <p>
             <i class="icon icon-email"></i>
             <span>
-              <a href="mailto:vendas@vougadecor.com.br">
-                vendas@vougadecor.com.br
+              <a href="mailto:<?= $email ?>">
+                <?= $email ?>
               </a>
             </span>
           </p>
           <p>
             <i class="icon icon-whatsapp"></i>
             <span>
-              <a href="tel:+5511973569049">
-                +55 11 97356 9049
+              <a href="tel:<?= $celular ?>">
+                <?= $celular ?>
               </a>
             </span>
           </p>
           <p>
             <i class="icon icon-phone"></i>
             <span>
-              <a href="tel:+551145240509">
-                +55 11 4524 0509
+              <a href="tel:<?= $telefone ?>">
+              <?= $telefone ?>
               </a>
             </span>
           </p>
@@ -35,24 +38,24 @@
           <i class="icon icon-location"></i>
           <span>
             <div>
-              Rua Vicente Mecca, 199
+            <?= $rua ?>
             </div>
             <div>
-              Jardim De Lucca - Itatiba - SP
+            <?= $bairro . ' - ' . $cidade . ' - ' . $estado ?>
             </div>
             <div>
-              CEP: 13.255-240 - Brasil
+            CEP: <?= $cep . ' - ' . $pais ?>
             </div>
           </span>
         </div>
         <div class="footer__column social">
-          <a target="_blank" href="https://www.instagram.com/vougadecor">
+          <a target="_blank" href="<?php the_field('instagram', 'option') ?>">
             <i class="icon icon-instagram"></i>
-            <span>@vougadecor</span>
+            <span><?php the_field('instagram_@', 'option') ?></span>
           </a>
-          <a target="_blank" href="https://www.facebook.com/vougadecor">
+          <a target="_blank" href="<?php the_field('facebook', 'option') ?>">
             <i class="icon icon-facebook"></i>
-            <span>/vougadecor</span>
+            <span><?php the_field('facebook_nome', 'option') ?></span>
           </a>
         </div>
       </div>
