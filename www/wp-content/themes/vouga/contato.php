@@ -4,60 +4,11 @@
 */
 get_header(); 
   include('template-parts/page-banner.php');
+  include('template-parts/contato-info.php');
 ?>
-    <section class="atendimento">
-      <div class="container">
-        <div class="atendimento__inside desktop-space-left">
-          <header class="atendimento__header content">
-            <h1 class="title-2">Contato</h1>
-          </header>
-          <div class="atendimento__body">
-            <div class="atendimento__columns">
-              <div class="atendimento__infos">
-                <h2 class="title-4">Fale com a gente</h2>
-                <div class="contact">
-                  <p>
-                    <i class="icon icon-email--brown"></i>
-                    <span>
-                      <a href="mailto:vendas@vougadecor.com.br">
-                        vendas@vougadecor.com.br
-                      </a>
-                    </span>
-                  </p>
-                  <p>
-                    <i class="icon icon-whatsapp--brown"></i>
-                    <span>
-                      <a href="tel:+5511973569049">
-                        +55 11 97356 9049
-                      </a>
-                    </span>
-                  </p>
-                  <p>
-                    <i class="icon icon-phone--brown"></i>
-                    <span>
-                      <a href="tel:+551145240509">
-                        +55 11 4524 0509
-                      </a>
-                    </span>
-                  </p>
-                </div>
-                <div class="address">
-                  <i class="icon icon-location--brown"></i>
-                  <span>
-                    <div>
-                      Rua Vicente Mecca, 199
-                    </div>
-                    <div>
-                      Jardim De Lucca - Itatiba - SP
-                    </div>
-                    <div>
-                      CEP: 13.255-240 - Brasil
-                    </div>
-                  </span>
-                </div>
-              </div>
+
               <div class="atendimento__form">
-                <form action="" class="form">
+                <!-- <form action="" class="form">
                   <input class="form__input" type="text" placeholder="Nome" />
                   <input class="form__input" type="tel" placeholder="Fone" />
                   <input class="form__input" type="email" placeholder="Email" />
@@ -73,7 +24,10 @@ get_header();
                     Enviar
                   </button>
                 </form>
-              </div>
+              </div> -->
+              <form action="" class="form">
+                <?php echo do_shortcode('[contact-form-7 id="79" title="Contato"]'); ?>
+              </form>
             </div>
           </div>
         </div>

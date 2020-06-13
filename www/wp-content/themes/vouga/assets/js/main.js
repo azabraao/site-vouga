@@ -5,7 +5,7 @@ $(document).ready(function() {
             $('.menu-item').on('click', menu.handleMenuDropdownClick);
         },
         handleMenuDropdownClick(event) {
-            $('.menu-item-55>a, .menu-item-44>a').removeAttr("href");
+            $('.menu-item-42>a, .menu-item-44>a').removeAttr("href");
             $(this).toggleClass('active');
         },
         handleHamburguerClick() {

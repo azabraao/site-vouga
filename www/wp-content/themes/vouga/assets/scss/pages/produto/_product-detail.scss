@@ -34,6 +34,11 @@
           }
         }
         .product-detail__row-image {
+          overflow-y: hidden;
+          overflow-x: scroll;
+          img {
+            max-width: 900px;
+          }
         }
       }
     }
@@ -42,7 +47,7 @@
 
 @include for-desktop-up {
   .product-detail {
-    padding: 50px 0 10px;
+    padding: 50px 0;
 
     .product-detail__inside {
       padding-left: 300px;
@@ -94,6 +99,11 @@
           }
           .product-detail__row-image {
             padding-top: 20px;
+            overflow: visible;
+
+            img {
+              max-width: 100%;
+            }
           }
         }
       }
