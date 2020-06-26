@@ -1,4 +1,9 @@
-<?php include_once('contato-data.php'); ?>
+<?php 
+    $post_ID = get_the_ID();
+    $parentpost_id = wp_get_post_parent_id( $post_ID );
+    $page = $parentpost_id;
+    include('contato-data.php');
+?>
 <section class="atendimento">
       <div class="container">
         <div class="atendimento__inside desktop-space-left">
@@ -42,11 +47,11 @@
                       <?= $rua ?>
                     </div>
                     <div>
-                      <?= $bairro . ' - ' . $cidade . ' - ' . $estado ?>
+                    <?= $bairro . ' - ' . $cidade . ' - ' . $estado ?>
                     </div>
                     <div>
                       CEP: <?= $cep . ' - ' . $pais ?>
                     </div>
                   </span>
                 </div>
-              </div>
+              </div> 

@@ -3,8 +3,8 @@ Contributors: jcollings
 Donate link: 
 Tags: submenu, menu, dynamic, custom post type, taxonomy, child pages
 Requires at least: 3.0.1
-Tested up to: 5.4
-Stable tag: 0.8.6
+Tested up to: 5.3
+Stable tag: 0.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,28 +29,34 @@ For further documentation on installing and using JC Submneu features can be fou
 
 = How do i use the split menu functionality =
 
-**What is a WordPress Split Menu**
+** What is a WordPress Split Menu **
 
 A WordPress Split Menu is the process of creating a multi level menu, and displaying a menu section relative to the currently viewed object/page. For Example if a site has the following menu and pages:
 
-    Page 1
-    - Page 1.1
-    - Page 1.2
-    Page 2
-    - Page 1.3
+```
+Page 1
+ - Page 1.1
+ - Page 1.2
+Page 2
+ - Page 1.3
+```
 
 Creating a split menu section for this example, you would set the start depth of 1, this means that when you are viewing any page or child page of Page 1 the split menu would output related items only:
 
-    Page 1
-    - Page 1.1
-    - Page 1.2
+```
+Page 1
+ - Page 1.1
+ - Page 1.2
+```
 
 and if you were viewing any page or child page of Page 2 the split menu section would be:
 
-    Page 2
-    - Page 1.3
+```
+Page 2
+ - Page 1.3
+```
 
-**Wordpress Split Menu Widget**
+** Wordpress Split Menu Widget **
 
 JC Submenu plugin comes with a widget titled “Split Menu Widget” which allows you to output your split menu within a wordpress sidebar.
 
@@ -66,14 +72,15 @@ Widget Settings:
 * Show Hierarcy – Choose to display a flat or nested list
 * Trigger Depth – Choose how many levels of children you would like to display in relation to the activate page, 0 = show all. (Added in v 0.62)
 
-**Split Menu Action**
+** Split Menu Action **
 
 JC Submenu plugin comes with a built in wordpress action to easily output a split menu anywhere within your theme.
 
-
-    <?php
-    do_action( 'jcs/split_menu' , $menu, $args = array() );
-    ?>
+```
+<?php
+do_action( 'jcs/split_menu' , $menu, $args = array() );
+?>
+```
 
 * hierarchy – Whether to display a flat list instead
 * start – Menu depth you wish to split from
@@ -88,7 +95,7 @@ JC Submenu plugin comes with a built in wordpress action to easily output a spli
 
 = How do i output a section of menu =
 
-**Menu Section Widget**
+** Menu Section Widget **
 
 JC Submenu plugins comes with a widget titled "Section Menu Widget" which allows you to output a section of your wordpress menu within a sidebar.
 It is located under Appearance > Widgets in your wordpress administration area.
@@ -100,13 +107,15 @@ Widget Settings:
 * Menu Depth – Set how many levels of the menu you wish to display
 * Show Parent – Choose whether to display the parent item
 
-**Menu Section Action**
+** Menu Section Action **
 
 JC Submenu plugin comes with a built in wordpress action to easily output a section of a menu anywhere within your theme.
 
-    <?php
-    do_action( 'jcs/menu_section' , $menu, $args = array() );
-    ?>
+```
+<?php
+do_action( 'jcs/menu_section' , $menu, $args = array() );
+?>
+```
 
 * hierarchy – Whether to display a flat list instead
 * start – Menu item you wish to display from
@@ -118,11 +127,14 @@ JC Submenu plugin comes with a built in wordpress action to easily output a sect
 * container_id – Set the id of the container element
 * container_class – Set the class of the container element
 
-**Menu Section Shortcode**
+** Menu Section Shortcode ** 
 
 Display a section of your wordpress menu within your visual editor using wordpress shortcodes.
 
-    [jcs_menu_section menu="" hierarchy="1" start="1" depth="5" show_parent="0" /]
+```
+[jcs_menu_section menu="" hierarchy="1" start="1" depth="5" show_parent="0" /]
+
+```
 
 * menu – Choose the menu you wish to display
 * hierarchy – Whether to display a flat list instead
@@ -136,38 +148,38 @@ JC Submenu WordPress plugin takes the hassle out of creating menus, by removing 
 
 Each with many customisable options allowing you to refine your final menu.
 
-**Enabling Automatic Menu Population**
+** Enabling Automatic Menu Population **
 
 Once you have the JC Submenu installed, from the menus section
 
 * Add a menu item that you wish to have posts as a submenu and click on save menu.
 * When the page reloads, click on the arrow on the right hand side of the menu item to display the advanced options.Tick the checkbox labelled JC Submenu – Automatically populate submenu to show an accordion of population options.
 
-**Populate WordPress Menus with Posts**
+** Populate WordPress Menus with Posts **
 
 1. Click on the section labelled Populate from post type.
-1. Post Type – Make sure Post is selected from from the drop down labelled Post Type
-1. Taxonomy – If you wish to only show posts from a certain category/taxonomy choose the appropriate taxonomy from the drop down labelled Taxonomy (otherwise choose All), If you wish to filter it down further by choosing a term within that taxonomy choose the appropriate term from the drop down labelled Terms.
-1. Order – Choose which field you want to order and how you’d like it ordered Ascending or Descending.
-1. Post Limit – Setting the number of posts to display, Set to 0 if you wish not to have a limit.
+* Post Type – Make sure Post is selected from from the drop down labelled Post Type
+* Taxonomy – If you wish to only show posts from a certain category/taxonomy choose the appropriate taxonomy from the drop down labelled Taxonomy (otherwise choose All), If you wish to filter it down further by choosing a term within that taxonomy choose the appropriate term from the drop down labelled Terms.
+* Order – Choose which field you want to order and how you’d like it ordered Ascending or Descending.
+* Post Limit – Setting the number of posts to display, Set to 0 if you wish not to have a limit.
 
-**Populate WordPress Menus with Taxonomies**
+** Populate WordPress Menus with Taxonomies **
 
 1. Click on the section labelled Populate from taxonomy.
-1. Taxonomies – Choose the taxonomy from the drop down you wish to populate from.
-1. Order – Choose which field you want to order and how you’d like it ordered Ascending or Descending.
-1. Hide Empty Terms – Hide terms that do not have any posts / custom posts.
+* Taxonomies – Choose the taxonomy from the drop down you wish to populate from.
+* Order – Choose which field you want to order and how you’d like it ordered Ascending or Descending.
+* Hide Empty Terms – Hide terms that do not have any posts / custom posts.
 
-**Populate WordPress Menus with Child Pages**
+** Populate WordPress Menus with Child Pages **
 
 1. Click on the section labelled Populate from pages.
-1. Parent Page – Choose the parent page to fetch the child pages.
-1. Order – Choose which field you want to order and how you’d like it ordered Ascending or Descending.
+* Parent Page – Choose the parent page to fetch the child pages.
+* Order – Choose which field you want to order and how you’d like it ordered Ascending or Descending.
 
 
 = What Actions and filters are avaliable in this plugin =
 
-**jcs/menu_item_args**
+** jcs/menu_item_args **
 
 jcs/menu_item_args filter is used to edit wp_nav_menu options on a per menu item basis allowing a truely customizeable menu output.
 
@@ -175,54 +187,60 @@ Example – Display Menu Item Image
 
 This example shows how to add an image before a menu item depending on that items object type.
 
-    add_filter( 'jcs/menu_item_args', 'jcs_menu_item_args', 10, 2);
-    function jcs_menu_item_args($args, $item){
-    
-        switch($item->object){
-            case 'page':
-                // add blue 10 pixel image before the menu item name
-                $args->link_before = '<img alt="" src="http://placehold.it/10x10/0000FF" />';
-            break;
-            case 'term':
-                // add green 10 pixel image before the menu item name
-                $args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />';
-            break;
-            case 'post':
-                // add red 10 pixel image before the menu item name
-                $args->link_before = '<img alt="" src="http://placehold.it/10x10/FF0000" />';
-            break;
-        }
-        return $args;
-    }
+```
+add_filter( 'jcs/menu_item_args', 'jcs_menu_item_args', 10, 2);
+function jcs_menu_item_args($args, $item){
+ 
+	switch($item->object){
+		case 'page':
+			// add blue 10 pixel image before the menu item name
+			$args->link_before = '<img alt="" src="http://placehold.it/10x10/0000FF" />';
+		break;
+		case 'term':
+			// add green 10 pixel image before the menu item name
+			$args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />';
+		break;
+		case 'post':
+			// add red 10 pixel image before the menu item name
+			$args->link_before = '<img alt="" src="http://placehold.it/10x10/FF0000" />';
+		break;
+	}
+	return $args;
+}
+```
 
-**jcs/item_classes**
+** jcs/item_classes **
 
 Add extra classes to menu items containing their item type.
 
-    add_action( 'jcs/item_classes', 'jc_edit_item_classes', 10, 3 );
-    function jc_edit_item_classes($classes, $item_id, $item_type){
-    
-        $classes[] = "item-$item_type";
-        return $classes;
-    }
+```
+add_action( 'jcs/item_classes', 'jc_edit_item_classes', 10, 3 );
+function jc_edit_item_classes($classes, $item_id, $item_type){
+ 
+	$classes[] = "item-$item_type";
+	return $classes;
+}
+```
 
-**jcs/item_title**
+** jcs/item_title **
 
 Display the dynamic menu type at the end of the item title.
 
-    add_filter('jcs/item_title', 'jc_edit_item_title', 10, 3);
-    function jc_edit_item_title($title, $item_id, $item_type){
-    
-        if($item_type == 'term'){
-            $title .= ' (term)';
-        }elseif($item_type == 'page'){
-            $title .= ' (page)';
-        }else{
-            $title .= " ($item_type)";
-        }
-    
-        return $title;
-    }
+```
+add_filter('jcs/item_title', 'jc_edit_item_title', 10, 3);
+function jc_edit_item_title($title, $item_id, $item_type){
+ 
+	if($item_type == 'term'){
+		$title .= ' (term)';
+	}elseif($item_type == 'page'){
+		$title .= ' (page)';
+	}else{
+		$title .= " ($item_type)";
+	}
+ 
+	return $title;
+}
+```
 
 = How do i use JC Submenu when my theme uses a custom menu walker =
 
@@ -230,11 +248,14 @@ JC Submenu allows you to disable its custom menu walker making it compatible wit
 
 To enable compatability with other menu walkers add the following code into your themes functions.php file.
 
-    // enable compatibility with theme custom menu walkers
-    add_filter('jcs/enable_public_walker', 'jc_disable_public_walker');
-    function jc_disable_public_walker($default){
-        return false;
-    }
+``` 
+// enable compatibility with theme custom menu walkers
+add_filter('jcs/enable_public_walker', 'jc_disable_public_walker');
+function jc_disable_public_walker($default){
+    return false;
+}
+```
+
 
 == Screenshots ==
 
@@ -244,6 +265,10 @@ To enable compatability with other menu walkers add the following code into your
 4. JC Submenu, Advanced Submenu Widget Options
 
 == Changelog ==
+
+**0.9.0**
+
+* Add menu-item-has-children to account for populated menu items
 
 **0.8.6**
 

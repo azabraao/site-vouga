@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-23 16:05:34+0000\n"
+"PO-Revision-Date: 2020-06-18 10:25:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1560,14 +1560,6 @@ msgid_plural "%d active installations"
 msgstr[0] "%d instalación activa"
 msgstr[1] "%d instalaciones activas"
 
-#: wp-includes/js/dist/components.js:36467
-msgid "Separate with commas, spaces, or the Enter key."
-msgstr "Sepáralo con comas, espacios o la tecla Intro."
-
-#: wp-includes/js/dist/components.js:36467
-msgid "Separate with commas or the Enter key."
-msgstr "Sepáralo con comas o con la tecla Intro."
-
 #. translators: 1: The failing plugins name. 2: The failing plugins version.
 #: wp-includes/class-wp-recovery-mode-email-service.php:338
 msgid "Current plugin: %1$s (version %2$s)"
@@ -1590,6 +1582,14 @@ msgstr "PHP versión %s"
 #: wp-includes/nav-menu.php:97
 msgid "Nav menu locations must be strings."
 msgstr "Las ubicaciones del menú de navegación deben ser cadenas."
+
+#: wp-includes/js/dist/components.js:36467
+msgid "Separate with commas or the Enter key."
+msgstr "Separar con comas o la tecla Intro."
+
+#: wp-includes/js/dist/components.js:36467
+msgid "Separate with commas, spaces, or the Enter key."
+msgstr "Separar con comas, espacios o la tecla Intro."
 
 #: wp-includes/formatting.php:4803
 msgid "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
@@ -10009,7 +10009,7 @@ msgctxt "genitive"
 msgid "May"
 msgstr "mayo"
 
-#: wp-includes/embed.php:1143
+#: wp-includes/embed.php:1156
 msgid "Sharing options"
 msgstr "Opciones de compartir"
 
@@ -10067,7 +10067,7 @@ msgid "It looks like nothing was found at this location. Maybe try visiting %s d
 msgstr "Parece que no hay nada en esta ubicación. ¿Estás tratando de visitar %s directamente?"
 
 #. translators: %s: Post title.
-#: wp-includes/embed.php:943 wp-includes/post-template.php:296
+#: wp-includes/embed.php:956 wp-includes/post-template.php:296
 msgid "Continue reading %s"
 msgstr "Sigue leyendo %s"
 
@@ -10437,11 +10437,11 @@ msgstr "Comentarios anteriores"
 msgid "Posts published on %s"
 msgstr "Entradas publicadas el %s"
 
-#: wp-includes/embed.php:1165
+#: wp-includes/embed.php:1178
 msgid "Copy and paste this code into your site to embed"
 msgstr "Copia y pega este código en tu sitio para incrustarlo"
 
-#: wp-includes/embed.php:1170
+#: wp-includes/embed.php:1183
 msgid "Close sharing dialog"
 msgstr "Cerrar la ventana de compartir"
 
@@ -10451,25 +10451,25 @@ msgid "Use the %s filter instead."
 msgstr "Utiliza el filtro %s en su lugar."
 
 #. translators: %s: Number of comments.
-#: wp-includes/embed.php:1102
+#: wp-includes/embed.php:1115
 msgid "%s <span class=\"screen-reader-text\">Comment</span>"
 msgid_plural "%s <span class=\"screen-reader-text\">Comments</span>"
 msgstr[0] "%s <span class=\"screen-reader-text\">Comentario</span>"
 msgstr[1] "%s <span class=\"screen-reader-text\">Comentarios</span>"
 
-#: wp-includes/embed.php:1151
+#: wp-includes/embed.php:1164
 msgid "HTML Embed"
 msgstr "Incrustar HTML"
 
-#: wp-includes/embed.php:1148
+#: wp-includes/embed.php:1161
 msgid "WordPress Embed"
 msgstr "Incrustados de WordPress"
 
-#: wp-includes/embed.php:1158
+#: wp-includes/embed.php:1171
 msgid "Copy and paste this URL into your WordPress site to embed"
 msgstr "Copia y pega esta URL en tu sitio WordPress para incrustarlo"
 
-#: wp-includes/embed.php:1126
+#: wp-includes/embed.php:1139
 msgid "Open sharing dialog"
 msgstr "Abrir la ventana de compartir"
 

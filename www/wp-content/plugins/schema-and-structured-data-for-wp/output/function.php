@@ -454,6 +454,12 @@ function saswp_get_all_schema_markup_output() {
             }                                 
                 if(in_array('BlogPosting', $output_schema_type_id) || in_array('Article', $output_schema_type_id) || in_array('TechArticle', $output_schema_type_id) || in_array('NewsArticle', $output_schema_type_id) ){                                                                                            
                 }else{
+                    if(!empty($site_navigation)){
+                                                                            
+                        $output .= saswp_json_print_format($site_navigation);   
+                        $output .= ",";
+                        $output .= "\n\n";                        
+                    }
                     if(!empty($kb_website_output)){
                         
                             $output .= saswp_json_print_format($kb_website_output);  
@@ -2038,7 +2044,8 @@ function saswp_append_fetched_reviews($input1, $schema_post_id = null){
                     
                     if(isset($input1['review'])){
 
-                    $input1['review'] = array_merge($input1['review'], $rv_markup['review']);
+                    $input1['review']          = $rv_markup['review'];
+                    $input1['aggregateRating'] = $rv_markup['aggregateRating'];
 
                     }else{
                        $input1 = array_merge($input1, $rv_markup);

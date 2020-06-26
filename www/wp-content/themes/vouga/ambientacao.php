@@ -17,46 +17,28 @@ get_header();
         </header>
         <div class="ambientacao__body">
             <div class="ambientacao_images">
-                <div class="ambientacao__image">
-                    <div class="ambientacao__image-the-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ambientacao-item.png" alt="Vouga decor imagem de ambientação" />
-                    </div>
-                    <div data-src="<?php echo get_template_directory_uri(); ?>/assets/img/ambientacao-item.png" class="ambientacao__image-title jsActiveModal">
-                        <p>
-                            Nome do produto
-                        </p>
-                    </div>
-                </div>
-                <div class="ambientacao__image">
-                    <div class="ambientacao__image-the-image">
-                        <img src="http://placekitten.com/200/100" alt="Vouga decor imagem de ambientação" />
-                    </div>
-                    <div data-src="http://placekitten.com/200/100" class="ambientacao__image-title jsActiveModal">
-                        <p>
-                            Nome do produto
-                        </p>
-                    </div>
-                </div>
-                <div class="ambientacao__image">
-                    <div class="ambientacao__image-the-image">
-                        <img src="http://placekitten.com/200/600" alt="Vouga decor imagem de ambientação" />
-                    </div>
-                    <div data-src="http://placekitten.com/200/600" class="ambientacao__image-title jsActiveModal">
-                        <p>
-                            Nome do produto
-                        </p>
-                    </div>
-                </div>
-                <div class="ambientacao__image">
-                    <div class="ambientacao__image-the-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ambientacao-item.png" alt="Vouga decor imagem de ambientação" />
-                    </div>
-                    <div data-src="<?php echo get_template_directory_uri(); ?>/assets/img/ambientacao-item.png" class="ambientacao__image-title jsActiveModal">
-                        <p>
-                            Nome do produto
-                        </p>
-                    </div>
-                </div>
+                <?php 
+                for($i = 1; $i < 5; $i++) :
+                    $field = 'destaque_' . $i;
+                    if(have_rows($field)) :
+                        while(have_rows($field)) : the_row();
+                        $nome = get_sub_field('nome');
+                        $imagem = get_sub_field('imagem');?>
+                        <div class="ambientacao__image">
+                            <div class="ambientacao__image-the-image">
+                                <img src="<?php echo $imagem ?>" alt="Vouga decor imagem de ambientação" />
+                            </div>
+                            <div data-src="<?php echo $imagem ?>" class="ambientacao__image-title jsActiveModal">
+                                <p>
+                                    <?= $nome ?>
+                                </p>
+                            </div>
+                        </div>
+                        <?php
+                        endwhile;
+                    endif;
+                    endfor
+                ?>
             </div>
         </div>
     </div>

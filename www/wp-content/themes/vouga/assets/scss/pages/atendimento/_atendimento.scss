@@ -1,74 +1,82 @@
-.atendimento {
-  padding: 50px 0;
-
-  .atendimento__inside {
-    .atendimento__header {
-      color: $primary;
-
-      h1 {
-        max-width: 300px;
-      }
-    }
-    .atendimento__body {
-      .atendimento__columns {
-        display: flex;
-        justify-content: space-between;
-
-        .atendimento__infos {
-          width: 40%;
-          color: $primary;
-          font-family: $font-primary;
-
-          h2 {
-            color: $primary;
-            margin-bottom: 20px;
-          }
-          .contact {
-            line-height: 26px;
-            margin-bottom: 20px;
-
-            p {
-              display: flex;
-              align-items: center;
-              margin-bottom: 5px;
-
-              i {
-                margin-right: 10px;
-              }
-              span {
-                a {
-                  text-decoration: none;
-                  color: $primary;
+    .atendimento {
+        padding: 50px 0;
+        .atendimento__inside {
+            .atendimento__header {
+                color: $primary;
+                h1 {
+                    max-width: 300px;
                 }
-              }
             }
-          }
-          .address {
-            display: flex;
-            width: auto;
-            line-height: 20px;
-            margin-bottom: 20px;
-
-            i {
-              margin-right: 10px;
+            .atendimento__body {
+                .atendimento__columns {
+                    display: flex;
+                    justify-content: space-between;
+                    .atendimento__infos {
+                        width: 40%;
+                        color: $primary;
+                        font-family: $font-primary;
+                        h2 {
+                            color: $primary;
+                            margin-bottom: 20px;
+                        }
+                        .contact {
+                            line-height: 26px;
+                            margin-bottom: 20px;
+                            p {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 5px;
+                                i {
+                                    margin-right: 10px;
+                                }
+                                span {
+                                    a {
+                                        text-decoration: none;
+                                        color: $primary;
+                                    }
+                                }
+                            }
+                        }
+                        .address {
+                            display: flex;
+                            width: auto;
+                            line-height: 20px;
+                            margin-bottom: 20px;
+                            i {
+                                margin-right: 10px;
+                            }
+                            span {
+                                div {}
+                            }
+                        }
+                    }
+                    .atendimento__form {
+                        width: 60%;
+                        padding-right: 50px;
+                    }
+                }
             }
-            span {
-              div {
-              }
-            }
-          }
         }
-        .atendimento__form {
-          width: 60%;
-          padding-right: 50px;
-        }
-      }
     }
-  }
-}
-
-@include for-desktop-up {
-  .atendimento {
-    padding: 70px 0 200px 0;
-  }
-}
+    
+    @include for-desktop-up {
+        .atendimento {
+            padding: 70px 0 200px 0;
+        }
+    }
+    
+    @media(max-width:768px) {
+        .atendimento {
+            &__columns {
+                flex-direction: column;
+            }
+            .atendimento__inside .atendimento__body .atendimento__columns {
+                .atendimento__infos {
+                    width: 100%;
+                }
+                .atendimento__form {
+                    width: 100%;
+                }
+            }
+        }
+    }

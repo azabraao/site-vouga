@@ -54,7 +54,9 @@
             max-height: 0;
             overflow: hidden;
             opacity: 0;
-            #menu-main {
+            #menu-main,
+            #menu-main-english,
+            #menu-main-espanol {
                 max-width: 42rem;
                 margin: 0 auto;
                 .menu-item {
@@ -138,7 +140,9 @@
                 max-height: 1000px;
                 overflow: visible;
                 opacity: 1;
-                #menu-main {
+                #menu-main,
+                #menu-main-english,
+                #menu-main-espanol {
                     display: flex;
                     max-width: unset;
                     padding-right: 4px;
@@ -174,6 +178,10 @@
                             position: absolute;
                             top: 196%;
                             left: -17px;
+                            li {
+                                margin: 0;
+                                text-align: left;
+                            }
                             a {
                                 position: relative;
                                 left: -10px;

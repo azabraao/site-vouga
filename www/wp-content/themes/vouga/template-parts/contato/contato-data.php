@@ -1,15 +1,15 @@
-<?php 
-    $email = get_field( "email", 'option' ); 
-    $celular = get_field( "celular", 'option' ); 
-    $telefone = get_field( "telefone", 'option' ); 
-    if( have_rows('endereco', 'option') ):
-    while( have_rows('endereco', 'option') ): the_row();
-        $rua = get_sub_field( "rua", 'option' ); 
-        $bairro = get_sub_field( "bairro", 'option' ); 
-        $cidade = get_sub_field( "cidade", 'option' ); 
-        $estado = get_sub_field( "estado", 'option' ); 
-        $cep = get_sub_field( "cep", 'option' ); 
-        $pais = get_sub_field( "pais", 'option' ); 
+<?php
+    $email = get_field( "email", $page ); 
+    $celular = get_field( "celular", $page ); 
+    $telefone = get_field( "telefone", $page ); 
+    if( have_rows('endereco', $page) ):
+    while( have_rows('endereco', $page) ): the_row();
+        $rua = get_sub_field( "rua", $page ); 
+        $bairro = get_sub_field( "bairro", $page ); 
+        $cidade = get_sub_field( "cidade", $page ); 
+        $estado = get_sub_field( "estado", $page ); 
+        $cep = get_sub_field( "cep", $page ); 
+        $pais = get_sub_field( "pais", $page ); 
     endwhile;
     endif;
 ?>

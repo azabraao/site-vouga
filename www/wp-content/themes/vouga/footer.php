@@ -1,4 +1,6 @@
 <?php 
+    $parentpost_id = wp_get_post_parent_id( '10' );
+    $page = $parentpost_id;
     include('template-parts/contato/contato-data.php');
 ?>
 <footer class="footer">
@@ -49,18 +51,19 @@
           </span>
         </div>
         <div class="footer__column social">
-          <a target="_blank" href="<?php the_field('instagram', 'option') ?>">
+          <a target="_blank" href="<?php the_field('instagram', $page) ?>">
             <i class="icon icon-instagram"></i>
-            <span><?php the_field('instagram_@', 'option') ?></span>
+            <span><?php the_field('instagram_@', $page) ?></span>
           </a>
-          <a target="_blank" href="<?php the_field('facebook', 'option') ?>">
+          <a target="_blank" href="<?php the_field('facebook', $page) ?>">
             <i class="icon icon-facebook"></i>
-            <span><?php the_field('facebook_nome', 'option') ?></span>
+            <span><?php the_field('facebook_nome', $page) ?></span>
           </a>
         </div>
       </div>
     </div>
   </div>
+  <?php dynamic_sidebar( 'footer-information' ); ?>
 </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>

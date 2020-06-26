@@ -1,5 +1,12 @@
+<?php
+/*
+/* Template Name: Home
+*/
+get_header(); 
+// wp_redirect( '/vouga/www/home' );
+// exit;
+?>
 
-<?php get_header(); ?>
 
   <header class="site-header">
     <div class="container">
@@ -12,21 +19,22 @@
   <section class="vivifique">
     <div class="container">
       <div class="vivifique__inside centered-columns">
+      <?php 
+        if(have_rows('vivifique_sua_casa')) :
+          while(have_rows('vivifique_sua_casa')) : the_row();
+            $titulo = get_sub_field('titulo');
+            $texto = get_sub_field('texto');
+          endwhile;
+        endif;
+      ?>
         <div class="column content">
           <h2 class="title-2">
-            Vivifique sua casa
+            <?= $titulo ?>
           </h2>
         </div>
         <div class="column content">
           <p>
-            Acreditamos que detalhes são importantes, e memórias afetivas são
-            o fruto de ambientes transformadores, como ouvir as histórias da
-            avó na varanda de casa, regando as plantas com aquele cheirinho de
-            terra molhada. Momentos como este nos fazem brilhar os olhos.
-            Ficam até marejados de saudades com tantas lembranças que uma casa
-            e a decoração podem nos proporcionar. Juntos, vamos participar da
-            sua vida unindo histórias e trazendo mais beleza, consciência
-            ecológica e sofisticação no seu lar.
+            <?= $texto ?>
           </p>
         </div>
       </div>
@@ -36,27 +44,33 @@
   <section class="quem-somos" id="quem-somos">
     <div class="container">
       <div class="quem-somos__inside centered-columns">
+      <?php
+        if(have_rows('quem_somos')) :
+          while(have_rows('quem_somos')) : the_row();
+            $titulo = get_sub_field('titulo');
+            $texto = get_sub_field('texto');
+            $texto_2 = get_sub_field('texto-2');
+            $texto_3 = get_sub_field('texto-3');
+            $imagem = get_sub_field('imagem');
+          endwhile;
+        endif;
+        ?>
         <div class="column content">
           <h2 class="title-2">
-            <div>Quem</div>
-            <div>somos</div>
+            <div><?= $titulo ?></div>
           </h2>
           <p>
-            Desde 1993 acumulando experiência no setor, conseguimos
-            desenvolver a mais completa linha de vasos, floreiras e acessórios
-            capazes de atender aos mais diferentes projetos paisagísticos bem
-            como aos mais exigentes profissionais.
+            <?= $texto ?>
           </p>
           <p>
-            Oferecemos a melhor tecnologia na produção de vasos, com alta
-            resistência e design moderno.
+            <?= $texto_2 ?>
           </p>
           <p>
-            Resistência, Durabilidade e Beleza
+          <?= $texto_3 ?>
           </p>
         </div>
         <div class="column content">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vaso-2.png" alt="Vaso" />
+          <img src="<?php echo $imagem ?>" alt="Vaso" />
         </div>
       </div>
     </div>
@@ -68,31 +82,23 @@
           <h2 class="title-2">Diferenciais</h2>
         </header>
         <div class="diferenciais-list">
-          <div class="diferencial content">
-            <h3>Ecológico</h3>
+          <?php 
+          for($i = 1; $i < 5; $i++) :
+            $field = 'diferencial_' . $i;
+            if( have_rows($field) ) :
+              while( have_rows($field) ) : the_row();
+                $titulo = get_sub_field('titulo');
+                $texto = get_sub_field('texto');
+              endwhile;
+            endif;
+            ?>
+            <div class="diferencial content">
+            <h3><?= $titulo ?></h3>
             <p>
-              Nossos produtos respeitam as normas ambientais, são atóxicos e
-              podem ser reciclados
+              <?= $texto ?>
             </p>
           </div>
-          <div class="diferencial content">
-            <h3>Leve</h3>
-            <p>Confeccionados em polietileno, são muito mais leves.</p>
-          </div>
-          <div class="diferencial content">
-            <h3>Resistência</h3>
-            <p>
-              Nossos produtos são resistentes a impactos e batidas, garantindo
-              sempre sua função e durabilidade
-            </p>
-          </div>
-          <div class="diferencial content">
-            <h3>Proteção</h3>
-            <p>
-              Devido aos aditivos anti-UV não sofrem ação da natureza. Faça
-              sol ou chuva, frio ou calor.
-            </p>
-          </div>
+          <?php endfor; ?>
         </div>
       </div>
     </div>
