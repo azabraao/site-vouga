@@ -52,6 +52,42 @@ $(document).ready(function () {
     },
   };
 
+  const productSlide = {
+    init() {
+      $('.jsSlide').on('scroll', productSlide.handleScroll);
+      $('.jsSlideNext').on('click', productSlide.next);
+      $('.jsSlidePrev').on('click', productSlide.prev);
+    },
+    next(event) {
+      event.target.parentElement.parentElement.scrollBy({
+        top: 0,
+        left: 300,
+        behavior: 'smooth',
+      });
+    },
+    prev(event) {
+      event.target.parentElement.parentElement.scrollBy({
+        top: 0,
+        left: -300,
+        behavior: 'smooth',
+      });
+    },
+    handleScroll() {
+      if (this.scrollLeft === 0) {
+        $(this).find('.jsSlidePrev').css('opacity', 0);
+      } else {
+        $(this).find('.jsSlidePrev').css('opacity', 1);
+      }
+
+      if (this.scrollLeft > 300) {
+        $(this).find('.jsSlideNext').css('opacity', 0);
+      } else {
+        $(this).find('.jsSlideNext').css('opacity', 1);
+      }
+    },
+  };
+
+  productSlide.init();
   ambientacaoModal.init();
   menu.init();
 });
