@@ -55,6 +55,10 @@ get_header(); ?>
                 </h3>
               </header>
               <div class="product-detail__row-image">
+                <div class="slide-pass">
+                  <div class="slide-pass__prev jsSlidePrev"></div>
+                  <div class="slide-pass__next jsSlideNext"></div>
+                </div>              
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jateado-inclinato.png" alt="" /> -->
                 <?php echo get_the_post_thumbnail(); ?>
               </div>

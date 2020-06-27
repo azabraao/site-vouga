@@ -27,6 +27,8 @@
         margin-bottom: 40px;
       }
       .product-detail__row {
+        position: relative;
+
         .product-detail__row-header {
           h3 {
             color: $primary;
@@ -36,73 +38,117 @@
         .product-detail__row-image {
           overflow-y: hidden;
           overflow-x: scroll;
-          img {
-            max-width: 900px;
+
+          .slide-helper {
+            width: 900px;
+            top: 0;
+            background: transparent;
+            opacity: 0;
+            display: flex;
+            justify-content: space-between;
+
+            .slide-helper__item {
+              width: calc(100% / 3);
+            }
+          }
+
+          .slide-pass {
+            position: absolute;
+            left: -10px;
+            right: -10px;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none;
+
+            .slide-pass__prev,
+            .slide-pass__next {
+              width: 25px;
+              height: 25px;
+              pointer-events: all;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: 20px 20px;
+              background-color: #dbd0c9cf;
+            }
+            .slide-pass__prev {
+              background-image: url(../img/arrow-left.svg);
+              opacity: 0;
+            }
+            .slide-pass__next {
+              background-image: url(../img/arrow-right.svg);
+            }
+
+            img {
+              max-width: 900px;
+            }
           }
         }
       }
     }
   }
-}
 
-@include for-desktop-up {
-  .product-detail {
-    padding: 50px 0;
+  @include for-desktop-up {
+    .product-detail {
+      padding: 50px 0;
 
-    .product-detail__inside {
-      padding-left: 300px;
+      .product-detail__inside {
+        padding-left: 300px;
 
-      .product-detail__header {
-        padding-bottom: 0;
-        display: flex;
-        justify-content: space-between;
+        .product-detail__header {
+          padding-bottom: 0;
+          display: flex;
+          justify-content: space-between;
 
-        .product-detail__header-content {
-          width: 400px;
-          color: $primary;
+          .product-detail__header-content {
+            width: 400px;
+            color: $primary;
 
-          h1 {
-          }
-          h3 {
-          }
-          p {
-            line-height: 21px;
-          }
-        }
-        .content {
-          margin-bottom: 0;
-        }
-        .product-detail__header-image {
-          width: 300px;
-          padding-top: 20px;
-
-          h3 {
-          }
-          img {
-          }
-        }
-      }
-      .product-detail__body {
-        .product-detail__row:not(:last-child) {
-          margin-bottom: 40px;
-        }
-        .product-detail__row:not(:last-child) {
-          margin-bottom: 80px;
-        }
-        .product-detail__row {
-          .product-detail__row-header {
+            h1 {
+            }
             h3 {
-              font-weight: 500;
-              color: $primary;
-              border-bottom: 1px solid $primary;
+            }
+            p {
+              line-height: 21px;
             }
           }
-          .product-detail__row-image {
+          .content {
+            margin-bottom: 0;
+          }
+          .product-detail__header-image {
+            width: 300px;
             padding-top: 20px;
-            overflow: visible;
 
+            h3 {
+            }
             img {
-              max-width: 100%;
+            }
+          }
+        }
+        .product-detail__body {
+          .product-detail__row:not(:last-child) {
+            margin-bottom: 40px;
+          }
+          .product-detail__row:not(:last-child) {
+            margin-bottom: 80px;
+          }
+          .product-detail__row {
+            .product-detail__row-header {
+              h3 {
+                font-weight: 500;
+                color: $primary;
+                border-bottom: 1px solid $primary;
+              }
+            }
+            .product-detail__row-image {
+              padding-top: 20px;
+              overflow: visible;
+
+              img {
+                max-width: 100%;
+              }
             }
           }
         }
