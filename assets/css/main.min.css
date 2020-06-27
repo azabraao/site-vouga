@@ -162,13 +162,23 @@ body {
             opacity: 0;
             transition: all 0.3s;
             padding-right: 20px; }
+            .navbar .navbar__inside .menu .menu__items .menu__item .menu__item--dropdown .menu__item--dropdown-links a::after {
+              content: '';
+              width: 4px;
+              height: 4px;
+              background: #ffffff;
+              position: absolute;
+              right: -12px;
+              top: 15px;
+              bottom: 0; }
             .navbar .navbar__inside .menu .menu__items .menu__item .menu__item--dropdown .menu__item--dropdown-links a {
               font-weight: light;
               display: block;
               padding: 10px 0;
               text-decoration: none;
               color: #fff;
-              pointer-events: none; }
+              pointer-events: none;
+              position: relative; }
           .navbar .navbar__inside .menu .menu__items .menu__item .menu__item--dropdown.active span {
             text-decoration: underline; }
           .navbar .navbar__inside .menu .menu__items .menu__item .menu__item--dropdown.active .menu__item--dropdown-links {
@@ -245,6 +255,8 @@ body {
               position: absolute;
               top: 196%;
               left: -17px; }
+              .navbar .navbar__inside .menu .menu__items .menu__item .menu__item--dropdown .menu__item--dropdown-links a:after {
+                display: none; }
               .navbar .navbar__inside .menu .menu__items .menu__item .menu__item--dropdown .menu__item--dropdown-links a {
                 position: relative;
                 left: -10px;
