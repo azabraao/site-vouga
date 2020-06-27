@@ -191,6 +191,10 @@ body {
               color: #fff;
               pointer-events: none;
               position: relative; }
+          .navbar .navbar__inside .jsMenu #menu-main .menu-item.active a,
+          .navbar .navbar__inside .jsMenu #menu-main-english .menu-item.active a,
+          .navbar .navbar__inside .jsMenu #menu-main-espanol .menu-item.active a {
+            text-decoration: underline; }
           .navbar .navbar__inside .jsMenu #menu-main .menu-item.active .sub-menu,
           .navbar .navbar__inside .jsMenu #menu-main-english .menu-item.active .sub-menu,
           .navbar .navbar__inside .jsMenu #menu-main-espanol .menu-item.active .sub-menu {
