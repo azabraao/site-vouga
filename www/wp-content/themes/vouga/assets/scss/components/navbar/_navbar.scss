@@ -75,6 +75,18 @@
             opacity: 0;
             transition: all 0.3s;
             padding-right: 20px;
+
+            a::after {
+              content: '';
+              width: 4px;
+              height: 4px;
+              background: #ffffff;
+              position: absolute;
+              right: -12px;
+              top: 15px;
+              bottom: 0;
+            }
+
             a {
               font-weight: light;
               display: block;
@@ -82,6 +94,7 @@
               text-decoration: none;
               color: $white;
               pointer-events: none;
+              position: relative;
             }
           }
           &.active {
@@ -181,6 +194,9 @@
               li {
                 margin: 0;
                 text-align: left;
+              }
+              a:after {
+                display: none;
               }
               a {
                 position: relative;
