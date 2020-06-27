@@ -1136,8 +1136,8 @@ body {
         pointer-events: none; }
         .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image .slide-pass .slide-pass__prev,
         .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image .slide-pass .slide-pass__next {
-          width: 25px;
-          height: 25px;
+          width: 35px;
+          height: 35px;
           pointer-events: all;
           background-repeat: no-repeat;
           background-position: center center;
