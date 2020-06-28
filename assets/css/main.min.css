@@ -1156,6 +1156,10 @@ body {
           background-position: center center;
           background-size: 20px 20px;
           background-color: #dbd0c9cf; }
+          @media (min-width: 75rem) {
+            .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image .slide-pass .slide-pass__prev,
+            .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image .slide-pass .slide-pass__next {
+              display: none; } }
         .product-detail .product-detail__inside .product-detail__body .product-detail__row .product-detail__row-image .slide-pass .slide-pass__prev {
           background-image: url(../../assets/img/arrow-left.svg);
           opacity: 0; }
